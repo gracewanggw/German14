@@ -23,6 +23,7 @@ static void promptUser();
 int main()
 {
     printIntro();
+    fprintf(stdout, "\n");
 
     int idx = 6;
     char* input = NULL;
@@ -32,10 +33,10 @@ int main()
     while ((input = file_readLine(stdin)) != NULL) {
       fprintf(stdout, "\n");
       if (strcmp(input,"no") == 0) {
-          fprintf(stdout, "Congratulations, you learned your lesson\n");
+          fprintf(stdout, "Congratulations, you learned your lesson.\nYou must be grateful for what you have and not always want more. ");
           return 0;
       } else if (idx == 0) {
-          fprintf(stdout, "You are back in your hovel \nMoral of the story:\nbe grateful for what you have. Greediness doesn't get you anywhere.");
+          fprintf(stdout, "You are back in your hovel \nMoral of the story:\nYou must be grateful for what you have and not always want more. ");
           return 0;
       } else if (strcmp(input,"yes") == 0) {
         printChoice(idx);
