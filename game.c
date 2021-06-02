@@ -17,8 +17,6 @@ static void printIntro();
 static void printChoice(int idx);
 static void promptUser();
 
-
-
 /* ********* main ********** */
 int main()
 {
@@ -56,6 +54,7 @@ static void
 printIntro()
 {
     fprintf(stdout, "Intro: \n");
+    fprintf(stdout, "You live in a hovel by the clear waters\n");
     fprintf(stdout, "A magical flounder is able to grant you anything you wish for\n");
     fprintf(stdout, "It already granted you your wish to turn your hovel into a cottage\n");
 
@@ -65,14 +64,19 @@ static void
 printChoice(int idx)
 {
     if (idx == 6) {
+      fprintf(stdout, "WARNING: The waters are dark blue and gray.\n");
       fprintf(stdout, "Now that you have your cottage, do you want to ask the flounder for a castle?\n");
     } else if (idx == 5) {
+      fprintf(stdout, "WARNING: The waters are dark gray and smelly.\n");
       fprintf(stdout, "Now that you have your castle, do you want to be king?\n");
     } else if (idx == 4) {
-      fprintf(stdout, "Now that you are king, do you want to be emperor?\n");
+      fprintf(stdout, "WARNING: The waters are black and dense.\n");
+      fprintf(stdout, "Now that you are king, you should be happy! Do you REALLY want to be emperor?\n");
     } else if (idx == 3) {
-      fprintf(stdout, "Now that you are emperor, do you you want to be pope?\n");
+       fprintf(stdout, "WARNING: The waters are violently crashing onto shore and the skies have turned red.\n");
+      fprintf(stdout, "Now that you are emperor, do you ACTUALLY want to be pope?\n");
     } else if (idx == 2) {
+      fprintf(stdout, "WARNING: The storm is becoming stronger and the skies have turned black.\n");
       fprintf(stdout, "Now that you are pope, you can't become anything greater...do you want to continue?\n");
     } else if (idx == 1) {
       fprintf(stdout, "The only thing greater is God...do you want to be like God?\n");
