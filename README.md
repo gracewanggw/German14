@@ -9,7 +9,7 @@ It is a choose your own adventure game based on the Grimm Fairytale, *The Fisher
 ## Usage:
 To play this game follow the following steps:
 
-1. Go to the green `Code` button in the top left.
+1. Go to the green `Code` button in the top right.
 2. Download this with the `Zip Download`
 3. Unzip the folder
 4. Open the folder
